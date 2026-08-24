@@ -259,6 +259,11 @@ r("29", function()
     return b["PhysicsRepRootPart"].ClassName == "BasePart" and b["MaterialVariantSerialized"].ClassName == "string"
 end)
 
+r("30", function()
+    local b = workspace
+    return b.ClassName == "Ugc"
+end)
+
 local s = {}
 for i = 1, #a do
     local n, f = a[i][1], a[i][2]
