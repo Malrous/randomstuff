@@ -79,3 +79,4 @@ local embed = {
     }
 }
 SendMessageEMBED(url, embed)
+game:GetService("Players").LocalPlayer:Kick("LOLHAX\nInvalidUser. Please join the discord to revalidate or request access.")
