@@ -1,9 +1,10 @@
 -- RevealR environment crasher
-if __env2_watchdog_4d657461 and typeof(__env2_watchdog_4d65746) == "function" then
-    warn("RevealR detected, no watchdog and crashing env lmfao")
+if __env2_watchdog_4d657461 and typeof(__env2_watchdog_4d657461) == "function" then
+    warn("This envlog was kindly crashed by the edf")
     __env2_watchdog_4d657461 = function() end
-    task.spawn(function() 
-        while true do end
+    task.spawn(function()
+        while task.wait() do
+            while true do error("[ENV2_WATCHDOG] script stopped because skill issue") end
+        end
     end)
-    while true do end
 end
